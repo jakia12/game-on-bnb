@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game On BNB </title>
+    <title>Game On BNB - Landing Page</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- AOS Scroll Animations -->
@@ -19,6 +19,34 @@
     </style>
   </head>
   <body class="antialiased text-gray-800 bg-amber-400">
+    <!-- Navbar -->
+    <nav class="bg-gray-900 text-white">
+      <div
+        class="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between"
+      >
+        <!-- Social Links (Left) -->
+        <div class="flex space-x-4 mb-2 sm:mb-0">
+          <a href="ttlink" target="_blank" class="hover:text-blue-400">
+            <img src="./x.png" alt="Twitter" class="w-6 h-6" />
+          </a>
+          <a href="tglink" target="_blank" class="hover:text-blue-500">
+            <img src="./tg.png" alt="Facebook" class="w-6 h-6" />
+          </a>
+          <a href="dexslink" target="_blank" class="hover:text-pink-500">
+            <img src="./dexs.png" alt="Instagram" class="w-6 h-6" />
+          </a>
+        </div>
+        <!-- Menu Items (Right) -->
+        <ul class="flex space-x-6">
+          <li><a href="#hero" class="hover:text-gray-300">Home</a></li>
+          <!-- <li><a href="#about" class="hover:text-gray-300">About</a></li> -->
+          <li>
+            <a href="#tokenomics" class="hover:text-gray-300">Tokenomics</a>
+          </li>
+          <li><a href="#socials" class="hover:text-gray-300">Socials</a></li>
+        </ul>
+      </div>
+    </nav>
     <!-- Hero Section -->
     <section class="relative h-screen w-full">
       <!-- Use <picture> for responsive images -->
@@ -34,7 +62,7 @@
     </section>
 
     <!-- Two-Column Section -->
-    <!-- <section class="py-16">
+    <!-- <section id="about" class="py-16">
       <div
         class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
       >
@@ -63,7 +91,7 @@
     </section> -->
 
     <!-- Three Cards Section -->
-    <section class="py-16 bg-amber-400">
+    <section id="tokenomics" class="py-16 bg-amber-400">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-8" data-aos="fade-up">Tokenomics</h2>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -107,7 +135,7 @@
     </section>
 
     <!-- Social Section -->
-    <section class="py-16 bg-amber-400">
+    <section id="socials" class="py-16 bg-amber-400">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-2xl font-bold mb-8" data-aos="fade-up">
           Join Us On Socials
