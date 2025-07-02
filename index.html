@@ -48,17 +48,16 @@
       </div>
     </nav>
     <!-- Hero Section -->
-    <section class="relative h-screen w-full">
-      <!-- Use <picture> for responsive images -->
-      <picture class="absolute inset-0">
-        <source media="(max-width:640px)" srcset="./mob.png" />
+    <section id="hero" class="w-full">
+      <!-- Use <picture> for responsive images, no cropping -->
+      <picture>
+        <source media="(max-width: 640px)" srcset="./mob.png" />
         <img
           src="./bg.jpg"
           alt="Game On BNB Hero"
-          class="object-cover object-top w-full h-full"
+          class="w-full h-auto object-top"
         />
       </picture>
-      <!-- Optional overlay/text can go here -->
     </section>
 
     <!-- Two-Column Section -->
